@@ -1,0 +1,22 @@
+body {
+  /* background-color: #000; */
+  direction: ltr !important;
+}
+.thumbnail {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}
+.img-blah {
+  height: 450px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+.bg {
+  background-color: purple;
+}
