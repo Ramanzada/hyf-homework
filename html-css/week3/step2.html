@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step two</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <img src="anony.png" alt="anonymous logo">
+    <div class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+  </div>
+  </div>
+  <div class="container">
+  <h1>Step 2/4 - how can we reach you?</h1>
+  <p><strong>Progress</strong></p>
+  <div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40"
+    aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      30% Complete (info)
+    </div>
+  </div>
+  <p>We will probably need to stay in touch somehow. Let is know How we can reach you?</p>
+  <div class="container">
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="email" placeholder="Your email..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="phone">Phone</label>
+        </div>
+        <div class="col-75">
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Your phone number..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="pwd">Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="pwd" name="pwd" placeholder="give it a password...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="pwd">Re-enter Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="pwd" name="pwd" placeholder="Re-enter your password...">
+        </div>
+      </div>
+      <p>I want to sign up for the newsletter</p>
+      <input name='input_name' type='radio'>
+      <label for="check1"> Weekly news</label><br>
+      <input name='input_name' type='radio'>
+      <label for="check2"> Monthly news</label><br>
+      <input name='input_name' type='radio'>
+      <label for="check3"> Don't send me news</label><br>
+    </form>
+    <a href="step3.html" ><button class="step3">Next step</button></a>
+  </div>
+  </div>
+</body>
+</html>
