@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warmup3</title>
+  </head>
+  <body>
+    <button id="my-button">Click me</button>
+
+    <script>
+      function logStringWithDelay(delay, stringToLog) {
+        setTimeout(() => {
+          console.log(stringToLog);
+        }, delay * 1000);
+      }
+
+      document
+        .getElementById("my-button")
+        .addEventListener("click", function () {
+          logStringWithDelay(5, "Called after 5 seconds");
+        });
+    </script>
+  </body>
+</html>

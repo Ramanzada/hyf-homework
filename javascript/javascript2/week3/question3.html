@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #time-input {
+        padding: 10px;
+        font-size: 18px;
+        margin-right: 10px;
+      }
+
+      #start-button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      #feedback {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Fastest Presser</h1>
+    <input type="text" id="time-input" />
+    <button id="start-button">Start game</button>
+    <div id="feedback"></div>
+
+    <script>
+      let countS = 0;
+      let countL = 0;
+      let time;
+      let timeoutId;
+
+      document
+        .getElementById("start-button")
+        .addEventListener("click", function () {
+          time = document.getElementById("time-input").value;
+          timeoutId = setTimeout(endGame, time * 1000);
+          document.addEventListener("keydown", countKeyPress);
+        });
+
+      function countKeyPress(event) {
+        if (event.key === "s") {
+          countS++;
+        } else if (event.key === "l") {
+          countL++;
+        }
+      }
+
+      function endGame() {
+        document.removeEventListener("keydown", countKeyPress);
+        clearTimeout(timeoutId);
+        let winner;
+        if (countS > countL) {
+          winner = "S";
+        } else if (countL > countS) {
+          winner = "L";
+        } else {
+          winner = "Its a tie";
+        }
+        document.getElementById("feedback").innerHTML =
+          "The winner is " + winner;
+      }
+    </script>
+  </body>
+</html>
