@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Spirit Animal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <script src="script1.js"></script>
+    <div>
+      <form action="namegenerator" method="GET">
+        <div class="mainDiv">
+          <label for="firstName" id="nameLabel"> First Name: </label>
+          <input type="text" name="firstname" id="firstName" required />
+        </div>
+        <div class="btn">
+          <input
+            id="btn"
+            type="button"
+            name="button"
+            value="Submit"
+            onClick="spiritAnimalNameGenerator()"
+          />
+        </div>
+      </form>
+    </div>
+    <div class="mainDiv">
+      <p id="generalText">Your spirit animal name will be</p>
+      <p id="spiritAnimalNameOutput"></p>
+    </div>
+  </body>
+</html>
