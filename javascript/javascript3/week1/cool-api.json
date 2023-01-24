@@ -1,0 +1,27 @@
+/*One cool API that I found is the NASA API (https://api.nasa.gov/).
+This API provides access to NASA's data, including information on Mars, Earth, and outer space. 
+You can use it to retrieve images, videos, and other information about NASA's missions, as well as 
+information about current and past space events. The API requires an API key, which you can get by 
+registering on the NASA API website.
+The NASA API responds with JSON data, which is structured as an object. The structure of the data may 
+vary depending on the endpoint you're accessing, but it generally includes information about the data returned, 
+such as the title, description, and date of the information. For example, when you query the API to get the latest 
+image of Mars, the response will be something like this:*/
+
+{
+    "copyright": "Damia Bouic",
+    "date": "2022-12-15",
+    "explanation": "Why is the sky blue? Because of Rayleigh scattering. As light from the sun travels 
+    through the atmosphere, it is scattered in all directions by the gases and tiny particles, like oxygen 
+    and nitrogen molecules. This scattered light is what makes the sky blue. The same process can also make 
+    the sky yellow, orange, or even red, depending on the size and composition of the scattering particles 
+    and the angle of the sun. The featured image was taken last month from the top of a mountain in the Pyrenees, 
+    France, and shows a blue sky with thin clouds above a colorful landscape. The thin clouds are made of water 
+    droplets that scatter sunlight in a similar way. The sun is also visible on the horizon, casting a warm golden 
+    light on the landscape.",
+    "hdurl": "https://apod.nasa.gov/apod/image/2112/bouic_pyrenees_1920.jpg",
+    "media_type": "image",
+    "service_version": "v1",
+    "title": "Why is the Sky Blue?",
+    "url": "https://apod.nasa.gov/apod/image/2112/bouic_pyrenees_960.jpg"
+}
