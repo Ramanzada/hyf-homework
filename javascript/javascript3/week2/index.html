@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Currency Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Calculator</h1>
+      <form>
+        <label>Enter amount:</label>
+        <input type="text" id="amount" placeholder="Enter amount" />
+        <br />
+        <label>From:</label>
+        <select id="from-currency">
+          <option value="DKK">Danish Krone (DKK)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="USD">US Dollar (USD)</option>
+        </select>
+        <br />
+        <label>To:</label>
+        <select id="to-currency">
+          <option value="EUR">Euro (EUR)</option>
+          <option value="DKK">Danish Krone (DKK)</option>
+          <option value="USD">US Dollar (USD)</option>
+        </select>
+        <br />
+        <button type="button" onclick="convertCurrency()">Convert</button>
+      </form>
+      <br />
+      <p>Result: <span id="result"></span></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
