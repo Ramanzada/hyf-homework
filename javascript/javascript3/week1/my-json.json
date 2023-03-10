@@ -1,0 +1,14 @@
+{
+  "kurdistan": {
+    "name": "Kurdistan",
+    "capital": "Amed",
+    "location": {
+      "latitude": "36.19",
+      "longitude": "44.00"
+    },
+    "population": "60 million",
+    "languages": ["Sorani", "Kurmanji", "Zazaki", "Hawrami"],
+    "currency": "Iraqi Dinar",
+    "flag": "https://www.example.com/images/kurdistan_flag.png"
+  }
+}
