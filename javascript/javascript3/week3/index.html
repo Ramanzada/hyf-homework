@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <?php
+      $email = '';
+      $password = '';
+      $error = '';
+      if (isset($_POST['email']) && isset($_POST['password'])) {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        if ($email === 'user@example.com' && $password === 'secret') {
+    ?>
+    <h1>Website Screenshot Generator</h1>
+    <form>
+      <label for="url">Enter a URL:</label>
+      <input type="text" id="url" name="url" />
+      <br />
+      <button id="generate">Generate Screenshot</button>
+    </form>
+    <br />
+    <div id="screenshot"></div>
+    <br />
+    <button id="save">Save Screenshot</button>
+    <br />
+    <br />
+    <h2>Saved Screenshots</h2>
+    <ul id="screenshots"></ul>
+    <script src="script.js"></script>
+    <?php
+        } else {
+          $error = 'Incorrect email or password';
+        }
+      }
+      if ($error || !isset($_POST['email'])) {
+    ?>
+    <h1>Login</h1>
+    <form method="post">
+      <label for="email">Email:</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        value="<?php echo $email; ?>"
+      />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <br />
+      <button type="submit">Login</button>
+    </form>
+    <br />
+    <p class="error"><?php echo $error; ?></p>
+    <?php
+      }
+    ?>
+  </body>
+</html>
